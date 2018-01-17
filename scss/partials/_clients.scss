@@ -1,5 +1,4 @@
 #clients {
-  height: 810px;
 }
 
 .clients__header {
@@ -21,6 +20,7 @@
 }
 .clients__main {
   display: flex;
+  justify-content: center;
 }
 
 .clients__main__picture {
@@ -32,6 +32,9 @@
   background: rgb(245,245,245);
   &:first-of-type {
     margin-top: 40px;
+  }
+  &:nth-of-type(2) {
+    margin: 60px 10px 80px 45px;
   }
 }
 
@@ -46,20 +49,53 @@
     content: '';
     position: absolute;
     left: -19px;
-    top: 85px;
+    top: 75px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right:20px solid rgb(0,246,246);
+    border-right:20px solid rgb(249,249,249);
   }
   h3 {
     font-size: 22px;
     font-family: $secondaryFont;
     color: $secondaryFontColor;
-    padding: 40px 45px;
+    padding-top: 40px;
+    padding-left: 45px;
   }
   p {
     font-size: 18px;
     font-family: $secondaryFont;
     color: $detailsColor;
+    padding: 25px 100px 45px 100px;
+  }
+}
+
+.clients__main--second {
+  margin-left: 45px;
+  margin-top: 80px;
+  height: 170px;
+  width: 640px;
+  background: rgb(245,245,245);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    right: -19px;
+    top: 75px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left:20px solid rgb(249,249,249);
+  }
+  h3 {
+    font-size: 22px;
+    font-family: $secondaryFont;
+    color: $secondaryFontColor;
+    padding-top: 40px;
+    padding-left: 45px;
+  }
+  p {
+    font-size: 18px;
+    font-family: $secondaryFont;
+    color: $detailsColor;
+    padding: 25px 100px 45px 130px;
   }
 }
