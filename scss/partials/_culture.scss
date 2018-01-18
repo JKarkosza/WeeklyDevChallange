@@ -1,10 +1,11 @@
 #culture {
-  max-height: 660px;
+  min-height: 660px;
   background: rgb(249,249,249);
 }
 
 .culture__header {
   padding-top: 100px;
+  margin-bottom: 90px;
   text-align: center;
   h2 {
     text-transform: uppercase;
@@ -80,5 +81,29 @@
     font-family: $secondaryFont;
     color: $secondaryFontColor;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .culture__content__icon--middle {
+    &::after {
+      right: -220px;
+    }
+    &::before {
+      right: 130px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .culture__content__icon--middle {
+    &::after {
+      width: 100px;
+      right: -135px;
+    }
+    &::before {
+      width: 100px;
+      right: 115px;
+    }
   }
 }
