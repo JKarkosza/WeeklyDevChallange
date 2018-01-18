@@ -6,7 +6,18 @@
   min-height: 165px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  img {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .logos__content {
+    img {
+      margin: 20px 10px;
+    }
+  }
 }
