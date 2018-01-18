@@ -64,6 +64,7 @@ footer {
   min-height: 100px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   .footer__bottom--copyrights {
     font-size: 14px;
     font-family: $mainFont;
@@ -71,7 +72,6 @@ footer {
     padding-top: 10px;
     }
   .footer__bottom--social {
-    margin-left: 50px;
     i {
       margin-right: 10px;
       width: 40px;
@@ -95,5 +95,42 @@ footer {
     .fa-google-plus:hover {
       background: rgb(218,39,19);
     }
+  }
+}
+
+@media (max-width: 1250px) {
+  .footer__top--contact {
+    padding-left: 50px;
+  }
+  .footer__bottom--copyrights {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    > .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .footer__top {
+    margin-left: 50px;
+  }
+  .footer__top--contact {
+    padding-left: 0;
+  }
+
+  .footer__bottom--social {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    padding: 0;
+  }
+  .footer__bottom--copyrights {
+    text-align: center;
+    margin: 20px 0;
   }
 }
