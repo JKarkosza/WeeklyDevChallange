@@ -30,19 +30,41 @@
     img {
       padding-bottom: 40px;
     }
-    h3{
+    h3 {
       padding-bottom: 20px;
       font-family: $mainFont;
       font-weight: 700;
       font-size: 18px;
       text-transform: uppercase;
     }
-    p{
+    p {
       font-family: $secondaryFont;
       font-size: 14px;
       margin-left: 27px;
       margin-right: 27px;
       text-align: center;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .services__header {
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .services__main {
+    margin: 50px auto 60px auto;
+    .col-4 {
+      img {
+        padding-bottom: 20px;
+      }
+      P {
+        margin-bottom: 50px;
+      }
     }
   }
 }

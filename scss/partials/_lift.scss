@@ -1,4 +1,4 @@
-.relax {
+#relax {
   height: 615px;
   display: flex;
 }
@@ -25,9 +25,12 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
+  padding-left: 100px;
+  padding-right: 50px;
   h2 {
     color: white;
-    margin: 100px auto 45px 100px;
+    margin-bottom: 45px;
+    margin-top: 100px;
     text-transform: uppercase;
     font-size: 40px;
     font-family: $mainFont;
@@ -38,7 +41,6 @@
   }
   p {
     color: rgba(255,255,255,.8);
-    margin-left: 100px;
     font-family: $secondaryFont;
     font-size: 16px;
   }
@@ -55,7 +57,6 @@
     font-family: $mainFont;
     font-size: 16px;
     font-weight: 700;
-    margin-left: 100px;
     margin-top: 50px;
     &:hover {
       background: rgb(255,255,255);
@@ -66,7 +67,6 @@
 
 .relax__content__list {
   margin-top: 20px;
-  margin-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -83,6 +83,37 @@
     }
     img {
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #relax {
+    display: block;
+  }
+  .gear {
+    display: none;
+  }
+  .relax__content {
+    padding-left: 50px;
+    width: 100%;
+    background: linear-gradient(
+                       rgba(0,0,0, .7),
+                       rgba(0,0,0, .7)),
+                       url('../images/lift.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+    a {
+      margin: 30px auto;
     }
   }
 }

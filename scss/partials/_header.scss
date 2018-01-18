@@ -8,17 +8,18 @@ header {
 .logo {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   text-align: center;
-  line-height: 35px;
+  line-height: 30px;
   div{
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50%;
     background: $detailsColor;
     color: white;
-    img {
-      transform: scale(1.1);
-      }
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
     h1 {
       font-family: $mainFont;
@@ -49,5 +50,25 @@ nav{
         color: rgb(57,57,57);
       }
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    margin-right: 5vw;
+    ul {
+      li {
+        margin-left: 10px;
+      }
+    }
+  }
+  .logo {
+    margin-left: 5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
   }
 }

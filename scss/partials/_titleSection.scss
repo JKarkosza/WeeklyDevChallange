@@ -59,3 +59,17 @@
     color: black;
   }
 }
+
+@media (max-width: 767px) {
+  .titleSection__text {
+    // margin: px auto;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+      margin: 25px 15px 50px 15px;
+      text-align: center;
+    }
+  }
+}
