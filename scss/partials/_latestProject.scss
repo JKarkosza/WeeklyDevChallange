@@ -1,17 +1,15 @@
 #latestProject {
-  height: 820px;
+  min-height: 820px;
   margin-top: 100px;
-  position: relative;
-  .ipad {
-    position: absolute;
-    top: 130px;
-    right: 0;
-  }
+  background-image: url("../images/ipad.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .latestProject__header {
   margin-bottom: 90px;
   text-align: center;
+
   h2 {
     font-family: $mainFont;
     text-transform: uppercase;
@@ -52,8 +50,10 @@
     flex-direction: row;
     margin-bottom: 15px;
     div:first-of-type {
-      width: 70px;
-      height: 70px;
+      min-width: 70px;
+      max-width: 70px;
+      min-height: 70px;
+      max-height: 70px;
       border: 3px solid black;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -110,6 +110,41 @@
     }
     i {
       color: $detailsColor;
+    }
+  }
+}
+
+@media (max-width: $gridContainerWidth) {
+  #latestProject {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #latestProject {
+    min-height: 600px;
+    margin-top: 50px;
+    background: linear-gradient(
+                       rgba(255,255,255, .7),
+                       rgba(255,255,255, .7)),
+                       url('../images/ipad.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .latestProject__header {
+    margin-bottom: 70px;
+  }
+  .latestProject__main__content__footer {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .latestProject__main__content__header {
+    width: 100%;
+    text-align: center;
+    padding-right: 50px;
+    p {
+      max-width: inherit;
     }
   }
 }
