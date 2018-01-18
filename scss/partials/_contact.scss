@@ -32,3 +32,12 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .talk__content {
+    height: 100%;
+    a {
+      margin-bottom: 50px;
+    }
+  }
+}
