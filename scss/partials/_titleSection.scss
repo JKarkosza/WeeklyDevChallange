@@ -1,6 +1,5 @@
 #titleSection {
   height: 530px;
-  // background-image: url(../images/titleSectionBg.jpg);
   background: linear-gradient(
                      rgba(0,0,0, .7),
                      rgba(0,0,0, .7)),
@@ -11,13 +10,13 @@
 }
 
 .titleSection__text {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 120px auto;
   align-items: center;
   color: white;
+  z-index: 1;
   h2 {
     font-family: $mainFont;
     font-size: 60px;

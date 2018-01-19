@@ -83,6 +83,7 @@ nav{
     -webkit-transition:all 200ms ease-in;
     -o-transition:all 200ms ease-in;
     transition:all 200ms ease-in;
+    z-index: 50;
     ul {
       display: block;
       width: 120px;
